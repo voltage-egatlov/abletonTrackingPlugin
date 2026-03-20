@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv-midi"
+version = "0.1.0"
+description = "Computer vision to MIDI for Ableton Live"
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python>=4.9",
+    "mediapipe>=0.10",
+    "mido>=1.3",
+    "python-rtmidi>=1.5",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+cv-midi = "cv_midi.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=cv_midi --cov-report=term-missing --cov-fail-under=80 --cov-config=.coveragerc"

@@ -1,0 +1,2 @@
+[console_scripts]
+cv-midi = cv_midi.main:main

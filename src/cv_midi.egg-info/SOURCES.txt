@@ -1,0 +1,10 @@
+pyproject.toml
+src/cv_midi.egg-info/PKG-INFO
+src/cv_midi.egg-info/SOURCES.txt
+src/cv_midi.egg-info/dependency_links.txt
+src/cv_midi.egg-info/entry_points.txt
+src/cv_midi.egg-info/requires.txt
+src/cv_midi.egg-info/top_level.txt
+tests/test_config.py
+tests/test_mapper.py
+tests/test_motion.py

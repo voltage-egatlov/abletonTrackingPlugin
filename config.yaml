@@ -1,0 +1,23 @@
+midi:
+  port_name: "CV-MIDI"
+  rate_limit: 60
+
+camera:
+  index: 0
+  width: 640
+  height: 480
+  fps: 30
+
+detectors:
+  motion: true
+  pose: false
+  hands: false
+  color: false
+
+mappings:
+  motion_intensity:
+    cc: 1
+    channel: 0
+    min_val: 0
+    max_val: 127
+    smoothing: 0.3

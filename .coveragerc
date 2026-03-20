@@ -1,0 +1,6 @@
+[run]
+omit =
+    src/cv_midi/main.py
+    src/cv_midi/ui/*
+    src/cv_midi/detectors/pose.py
+    src/cv_midi/detectors/hands.py
